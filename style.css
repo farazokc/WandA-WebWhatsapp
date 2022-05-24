@@ -3,17 +3,25 @@
     Cantarell, Fira Sans, sans-serif;
 }
 
-nav {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+}
+
+.nav {
   background-color: #00a884;
   color: white;
   position: absolute;
-  z-index: -1;
+  /* z-index: -1; */
   width: 100%;
   height: 22%;
+
   display: flex;
   align-items: baseline;
   padding-left: 22%;
   padding-top: 1%;
+
   font-weight: bold;
   font-size: 14px;
   display: flex;
@@ -21,10 +29,9 @@ nav {
 
 .rest {
   background-color: #dcdedd;
-  position: fixed;
-  z-index: -2;
-  top: 0;
-  left: 0px;
+  position: absolute;
+  /* z-index: -2; */
+  top: 22%;
   width: 100%;
   height: 100%;
 }
@@ -36,12 +43,12 @@ nav {
   z-index: 1;
   position: absolute;
   margin: auto;
-  top: 7%;
+  top: 10%;
   right: 0;
-  bottom: -5%;
+  /* bottom: -5%; */
   left: 0;
   width: 47%;
-  height: 85%;
+  height: 103%;
   font-size: large;
 
   display: flex;
@@ -98,7 +105,7 @@ ol {
   height: 50px;
   width: 50px;
 }
-
-/* div {
+/* 
+div {
   outline: 1px solid red !important;
 } */
